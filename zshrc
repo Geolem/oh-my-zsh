@@ -45,7 +45,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git sublime)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,12 +88,16 @@ alias izshsource="source ~/.zshrc"
 alias izshbackup="cp ~/.zshrc ~/.oh-my-zsh/zshrc"
 alias izshupdate="upgrade_oh_my_zsh"
 
+
 ########################################
 # 其他设置
 ########################################
 alias cls="clear"
 
+# 使用 sublime 打开md（Markdown）文件
+alias -s md=st
 alias -s gz="tar -xzvf"
 alias -s tgz="tar - xzvf"
 alias -s zip="unzip"
 alias -s bz2="tar -xjvf"
+
