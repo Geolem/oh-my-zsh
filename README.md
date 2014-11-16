@@ -9,7 +9,7 @@ WHY?
 安装
 ====
 
-关于 oh-my-zsh 的安装请参考原文档 **README.textile**
+关于 oh-my-zsh 的安装请参考原文档 [README.textile](./README.textile)
 
 需要注意的地方：
 ====
