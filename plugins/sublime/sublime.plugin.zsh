@@ -3,12 +3,16 @@
 if [[ $('uname') == 'Linux' ]]; then
     local _sublime_linux_paths > /dev/null 2>&1
     _sublime_linux_paths=(
+        # 我的 sublime 安装路径
+        "/opt/Sublime/sublime_text"
         "$HOME/bin/sublime_text"
         "/opt/sublime_text/sublime_text"
         "/usr/bin/sublime_text"
         "/usr/local/bin/sublime_text"
         "/usr/bin/subl"
     )
+    # 为了能在 sublime 中输入中文
+    export LD_PRELOAD=/opt/Sublime/lib/libsublime-imfix.so 
     for _sublime_path in $_sublime_linux_paths; do
         if [[ -a $_sublime_path ]]; then
             st_run() { $_sublime_path $@ >/dev/null 2>&1 &| }
