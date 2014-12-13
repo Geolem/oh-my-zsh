@@ -16,4 +16,17 @@ WHY?
 
 0. 设置完成后需要重启
 
-因为一般默认的Shell都是bash，改变了用户默认的Shell，需要重新登陆。
+    因为一般默认的Shell都是bash，改变了用户默认的Shell，需要重新登陆。
+
+
+
+其他
+====
+
+0. 关于插件的使用（博文）
+
+    [关于 oh-my-zsh 插件的使用（以 Sublime Text 为例）][src1]
+    
+    
+    
+[src1]: http://www.cnblogs.com/memory4young/p/about-oh-my-zsh-plugin-sublime.html
