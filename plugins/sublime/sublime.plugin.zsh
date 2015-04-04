@@ -12,7 +12,13 @@ if [[ $('uname') == 'Linux' ]]; then
         "/usr/bin/subl"
     )
     # 为了能在 sublime 中输入中文
-    export LD_PRELOAD=/opt/Sublime/lib/libsublime-imfix.so 
+    # 首先要判断文件是否存在
+    path1=/opt/Sublime/lib/libsublime-imfix.so 
+    if [ -e $path1 ]
+    then
+	#echo $path1
+	export LD_PRELOAD="$path1"
+    fi
     for _sublime_path in $_sublime_linux_paths; do
         if [[ -a $_sublime_path ]]; then
             st_run() { $_sublime_path $@ >/dev/null 2>&1 &| }
