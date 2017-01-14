@@ -100,3 +100,5 @@ alias -s py=st
 
 # 路径别名
 hash -d workout="/Users/youngz/FS/A01-Workspace/01-GitHub/OtherLang/Python/scripts/workout-log/"
+hash -d hexo="/Users/youngz/Dropbox/share/Hexo"
+hash -d surge="/Users/youngz/Library/Mobile Documents/iCloud~run~surge/Documents"
